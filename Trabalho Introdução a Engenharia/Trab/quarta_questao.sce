@@ -1,0 +1,14 @@
+D = [1 1 1 1;2 -1 1 0;-1 1 -1 -1;2 0 2 1];
+DX=[1 1 1 1; 2 -1 1 0; 0 1 -1 -1;-1 0 2 1];
+DY = [1 1 1 1;2 2 1 0;-1 0 -1 -1;2 -1 2 1];
+DZ = [1 1 1 1;2 -1 2 0;-1 1 0 -1;2 0 -1 1];
+DT = [1 1 1 1;2 -1 1 2;-1 1 -1 0;2 0 2 -1];
+determinante=det(D);
+determinante_x=det(DX);
+determinante_y=det(DY);
+determinante_z=det(DZ);
+determinante_t=det(DT);
+X=determinante_x/determinante
+Y=determinante_y/determinante
+Z=determinante_z/determinante
+T=determinante_t/determinante
